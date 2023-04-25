@@ -14,7 +14,7 @@ myString(myName);
 function myNameCompany(nameCompany) {
     var comPany = nameCompany.toLowerCase();
 
-    console.log(comPany.charAt(0).toUpperCase() + comPany.slice(1, 10));
+    console.log(comPany.charAt(0).toUpperCase() + comPany.slice(1));
 }
 
 myNameCompany("morSoftware");
