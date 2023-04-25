@@ -1,4 +1,4 @@
-
+//bai 1
 var myName = "Tăng Đức Hoàng";
 
 function myString(myName) {
@@ -9,24 +9,69 @@ function myString(myName) {
 myString(myName);
 
 
+//bai 2
 
-var nameCompaty = "morSofware";
-function myNameCompaty(nameCompaty) {
-    var my = nameCompaty.toLocaleLowerCase().split('');
-    var resul = my
-
+function myNameCompany(nameCompany) {
+    var comPany = nameCompany.toUpperCase();
+    
+    console.log(comPany);
 }
-myNameCompaty(nameCompaty);
+
+myNameCompany("morSoftware");
 
 
 
-var myArray = [1, 5, 20, 7, 9, 4]
 
 
+//bài 3
 
 function myAarrayUp(myArray) {
-    var myUp = myArray.filter(num => num % 2 == 0).sort()
+    var myUp = myArray.filter(num => num % 2 == 0).sort((a, b) => a - b)
     console.log(myUp)
 }
-myAarrayUp(myArray)
+myAarrayUp(myArray = [18, 6, , 2, 9, 10]);
 
+
+
+//bài 4
+function conFimUser(User) {
+
+
+    //username
+    if (User.userName.length >= 6 && User.userName.length <= 32) {
+        console.log("Tên hợp lệ");
+    }
+
+    else {
+        console.log("Tên không hợp lệ");
+    }
+
+    //password
+
+    if (User.passWord.length >= 6 && User.passWord.length <= 32) {
+        console.log("Mật khẩu hợp lệ");
+    }
+
+    else {
+        console.log("Mật khẩu không hợp lệ");
+    }
+
+
+
+    //confim
+    if (User.conFim.length >= 6 && User.conFim.length <= 32 && User.conFim === User.passWord) {
+        console.log(" Xác thực hợp lệ");
+    }
+
+    else {
+        console.log("Xác thực không hợp lệ");
+    }
+
+}
+
+conFimUser(
+    User = {
+        userName: "username ",
+        passWord: "password",
+        conFim: "password",
+    })
