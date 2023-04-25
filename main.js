@@ -12,9 +12,9 @@ myString(myName);
 //bai 2
 
 function myNameCompany(nameCompany) {
-    var comPany = nameCompany.toUpperCase();
-    
-    console.log(comPany);
+    var comPany = nameCompany.toLowerCase();
+
+    console.log(comPany.charAt(0).toUpperCase() + comPany.slice(1, 10));
 }
 
 myNameCompany("morSoftware");
