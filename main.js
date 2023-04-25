@@ -26,7 +26,7 @@ myNameCompany("morSoftware");
 //bài 3
 
 function myAarrayUp(myArray) {
-    var myUp = myArray.filter(num => num % 2 == 0).sort((a, b) => a - b)
+    var myUp = myArray.filter(num => num % 2 == 0).sort((a, b) => b - a)
     console.log(myUp)
 }
 myAarrayUp(myArray = [18, 6, , 2, 9, 10]);
@@ -39,32 +39,32 @@ function conFimUser(User) {
 
     //username
     if (User.userName.length >= 6 && User.userName.length <= 32) {
-        console.log("Tên hợp lệ");
+        console.log("Pass");
     }
 
     else {
-        console.log("Tên không hợp lệ");
+        console.log("Fail");
     }
 
     //password
 
     if (User.passWord.length >= 6 && User.passWord.length <= 32) {
-        console.log("Mật khẩu hợp lệ");
+        console.log("Pass");
     }
 
     else {
-        console.log("Mật khẩu không hợp lệ");
+        console.log("Fail");
     }
 
 
 
     //confim
     if (User.conFim.length >= 6 && User.conFim.length <= 32 && User.conFim === User.passWord) {
-        console.log(" Xác thực hợp lệ");
+        console.log(" Pass");
     }
 
     else {
-        console.log("Xác thực không hợp lệ");
+        console.log("Fail");
     }
 
 }
